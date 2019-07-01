@@ -109,7 +109,7 @@ class TransferBase(object):
             if 'id' in row:
                 self.port_uid_table[row['port']] = row['id']
 
-            read_config_keys = ['method', 'obfs', 'obfs_param', 'protocol', 'protocol_param', 'forbidden_ip', 'forbidden_port', 'speed_limit_per_con', 'speed_limit_per_user']
+            read_config_keys = ['method', 'obfs', 'obfs_param', 'protocol', 'forbidden_ip', 'forbidden_port', 'speed_limit_per_con', 'speed_limit_per_user']
             for name in read_config_keys:
                 if name in row and row[name]:
                     if name in keymap:
